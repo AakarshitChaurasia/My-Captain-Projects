@@ -1,0 +1,73 @@
+#include<stdio.h>
+
+float avg (float a, float b, float c);  // Dec   // Formal Para
+
+float avg(float a, float b, float c)    // Definition
+{
+    float d;
+    d=(a+b+c)/3;
+    return d;
+}
+
+
+
+int main()
+{
+    float x,y,z,average;
+    printf("Enter any 3 numbers.");
+    scanf("%f%f%f",&x,&y,&z);
+
+    average= avg(x,y,z);    // Call  // Actual Para
+
+
+    printf("\nThe average is %f",average);
+    return 0;
+}
+From Veer Gandhi to Everyone:  07:57 PM
+Cap my college portion is going in full fledge.. So i am not able to do the tasks...
+
+
+
+int main()
+{
+    int n,i;
+    int a[5]; // Dec
+    printf("Enter any 5 numbers.\n");
+    for(i=0;i<5;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+
+    printf("The 5 numbers are:\n");
+    for(i=0;i<5;i++)
+    {
+        printf("%d ",a[i]);
+    }
+
+
+    //printf("Garbage value: %d",a[6]);
+    return 0;
+}
+
+int main()
+{
+    int n,i,j;
+    double a[5]; // Dec
+    double *b;
+    b=&a;
+    printf("Enter any 5 numbers.\n");
+    for(i=0;i<5;i++)
+    {
+        scanf("%lf",(b+i));
+    }
+
+    printf("The 5 numbers are:\n");
+    for(i=0;i<5;i++)
+    {
+        printf("%d ",*(b+i));
+    }
+
+
+    //printf("Garbage value: %d",a[6]);
+    return 0;
+}
